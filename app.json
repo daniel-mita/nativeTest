@@ -1,0 +1,71 @@
+{
+  "expo": {
+    "name": "ROM Coach",
+    "slug": "mixed-martial-arts",
+    "facebookScheme": "fb450917405540763",
+    "facebookAppId": "450917405540763",
+    "facebookDisplayName": "ROM COACH",
+    "facebookAutoLogAppEventsEnabled": true,
+    "version": "1.0.1",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.romcoach",
+      "infoPlist": {
+        "LSApplicationQueriesSchemes": [
+          "fbapi",
+          "fb-messenger-share-api",
+          "fbauth2",
+          "fbshareextension"
+        ],
+        "facebookAppId": "450917405540763",
+        "facebookScheme": "fb450917405540763",
+        "facebookDisplayName": "ROM COACH",
+        "facebookAutoLogAppEventsEnabled": true
+      },
+      "config": {
+        "googleSignIn": {
+          "reservedClientId": "com.googleusercontent.apps.726672663455-k1s664ljjnan50sdrop69v0m0ila382k"
+        }
+      },
+      "googleServicesFile": "./GoogleService-Info.plist",
+      "publishBundlePath": "ios/mixed-martial-arts/Supporting/shell-app.bundle",
+      "publishManifestPath": "ios/mixed-martial-arts/Supporting/shell-app-manifest.json"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "android": {
+      "package": "com.romcoach",
+      "googleServicesFile": "./google-services.json",
+      "publishBundlePath": "android/app/src/main/assets/shell-app.bundle",
+      "publishManifestPath": "android/app/src/main/assets/shell-app-manifest.json",
+      "permissions": [
+        "CAMERA",
+        "SYSTEM_ALERT_WINDOW",
+        "READ_INTERNAL_STORAGE",
+        "READ_PHONE_STATE",
+        "USE_FINGERPRINT",
+        "VIBRATE",
+        "MODIFY_AUDIO_SETTINGS",
+        "CAMERA",
+        "READ_CONTACTS",
+        "READ_CALENDAR",
+        "WRITE_CALENDAR",
+        "READ_EXTERNAL_STORAGE",
+        "RECORD_AUDIO",
+        "WRITE_EXTERNAL_STORAGE",
+        "ACCESS_NETWORK_STATE",
+        "WAKE_LOCK"
+      ]
+    },
+    "entryPoint": "node_modules/expo/AppEntry.js"
+  }
+}
